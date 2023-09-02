@@ -736,6 +736,8 @@ ri
 right
 s
 sa
+saade
+saale
 saara
 saare
 saath
@@ -753,6 +755,7 @@ sang
 sara
 sath
 saw
+sawllleeeeee
 say
 saying
 says

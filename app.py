@@ -3,8 +3,18 @@ import preprocessor,helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.sidebar.title("Whatsapp Chat Analyzer")
-
+st.sidebar.title("WAppMine: Extracting Value from Chats")
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            footer:after{
+                Content: 'Made with <3 by Tanveer';
+                display:block;
+                position:relative;
+                color:white;
+            } 
+            </style>
+            """
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
@@ -21,7 +31,7 @@ if uploaded_file is not None:
     user_list.sort()
     user_list.insert(0,"Overall")
 
-    selected_user = st.sidebar.selectbox("Show analysis wrt",user_list)
+    selected_user = st.sidebar.selectbox("Show analysis of",user_list)
 
     if st.sidebar.button("Show Analysis"):
 
