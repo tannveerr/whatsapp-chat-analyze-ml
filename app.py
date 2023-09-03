@@ -6,15 +6,7 @@ import seaborn as sns
 st.sidebar.title("WAppMine: Extracting Value from Chats")
 hide_st_style = """
             <style>
-            footer {visibility: visible;}
-            footer:after{
-                Content: 'Made with <3 by Tanveer';
-                display:block;
-                position:relative;
-                color:white;
-                padding:5px;
-                top:3px;
-            } 
+            footer {visibility: hidden;}
             </style>
             """
 st.markdown(hide_st_style,unsafe_allow_html=True)
