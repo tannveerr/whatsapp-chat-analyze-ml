@@ -6,15 +6,18 @@ import seaborn as sns
 st.sidebar.title("WAppMine: Extracting Value from Chats")
 hide_st_style = """
             <style>
-            footer {visibility: hidden;}
+            footer {visibility: visible;}
             footer:after{
                 Content: 'Made with <3 by Tanveer';
                 display:block;
                 position:relative;
                 color:white;
+                padding:5px;
+                top:3px;
             } 
             </style>
             """
+st.markdown(hide_st_style,unsafe_allow_html=True)
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
